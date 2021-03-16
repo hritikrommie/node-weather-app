@@ -57,7 +57,7 @@ app.get('/about',(req,res)=>{
     res.render('about',{
         title:'About Me',
         name:'Hritik',
-        phone:'6200726997'
+        phone:'56656565'
     })
 })
 app.get('/help',(req,res)=>{
