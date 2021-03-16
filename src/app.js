@@ -5,6 +5,7 @@ const location = require('./utils/getLocation')
 const forecast = require('./utils/getForecast')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 const public  = path.join(__dirname,'../public')
 const viewpath = path.join(__dirname,'../templates/views')
@@ -81,6 +82,6 @@ app.get('*',(req,res)=>{
 // app.get('/help',(req,res)=>{
 //     res.send("ow can i help you!")
 // })
-app.listen(3000,()=>{
-    console.log('server is up!')
+app.listen(port,()=>{
+    console.log('server is up on port '+port)
 }) 

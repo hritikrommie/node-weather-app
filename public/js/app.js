@@ -8,7 +8,7 @@ const msg = document.querySelector('#dat')
 form.addEventListener('submit',(e)=>{
     e.preventDefault();
     console.log(search.value);
-    const url = 'http://localhost:3000/weather?search='+search.value
+    const url = '/weather?search='+search.value
     errorMsg.textContent = 'Loading...'
     msg.textContent = ''
     fetch(url).then((response)=>{
